@@ -32,7 +32,7 @@ module.exports = (sequelize) => {
             },
             testing: {
                 type: DataTypes.INTEGER,
-                allowNull: ture,
+                allowNull: true,
             },
             negative: {
                 type: DataTypes.INTEGER,
