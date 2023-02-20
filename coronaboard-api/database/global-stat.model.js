@@ -38,6 +38,10 @@ module.exports = (sequelize) => {
                 type: DataTypes.INTEGER,
                 allowNull: true,
             },
+            released: {
+                type: DataTypes.INTEGER,
+                allowNull: true,
+            },
         },
 
         {
