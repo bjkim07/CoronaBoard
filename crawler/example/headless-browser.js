@@ -1,7 +1,10 @@
 const puppeteer = require('puppeteer');
 
 async function main() {
-    const browser = await puppeteer.launch();
+
+    const browser = await puppeteer.launch({
+        // executablePath: "C:\\Users\\K0000\\AppData\\Local\\Chromium\\Application\\chrome.exe",
+    });
     const page = await browser.newPage();
 
     const pageUrl = 'https://yjiq150.github.io/coronaboard-crawling-sample/http-api-with-button';
