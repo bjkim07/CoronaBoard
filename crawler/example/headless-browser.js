@@ -8,8 +8,9 @@ async function main() {
     const page = await browser.newPage();
 
     const pageUrl = 'https://yjiq150.github.io/coronaboard-crawling-sample/http-api-with-button';
+    const pageUrl1 = 'http://web.humoruniv.com/board/humor/list.html?table=pick&st=day'
     await page.goto(pageUrl, {
-        waitUntil: 'networkidle0',
+        waitUntil: 'domcontentloaded',
     });
 
     await page.click('input[type="button"]');
